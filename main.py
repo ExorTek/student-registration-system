@@ -91,6 +91,7 @@ def Search():
     for rowIndex, rowData in enumerate(cursorsDb):
             for columnIndex, columnData in enumerate(rowData):
                 ui.tblwListen.setItem(rowIndex,columnIndex,QtWidgets.QTableWidgetItem(str(columnData)))
+                Clear()
 
 
 #--------- UPDATE -----------------------------------------------------------------#
